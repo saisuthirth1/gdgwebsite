@@ -1,8 +1,8 @@
 "use client"
 
-import { useState, useRef, useCallback, useEffect } from "react"
+import { useState } from "react" // Remove useRef, useCallback, useEffect
 import { useRouter } from "next/navigation"
-import { Camera } from "lucide-react"
+// Remove Camera import
 import { db } from "@/app/firebase/config"
 import { collection, addDoc, serverTimestamp } from "firebase/firestore"
 
@@ -196,7 +196,6 @@ const statesAndDistricts = {
 }
 
 export default function RegisterPage() {
-  const videoRef = useRef<HTMLVideoElement>(null)
   const router = useRouter()
   const [isLoading, setIsLoading] = useState(false)
   const [showCamera, setShowCamera] = useState(false)
@@ -210,11 +209,12 @@ export default function RegisterPage() {
     setIsLoading(true)
     setError("")
 
-    if (!isCaptured) {
-      setError("Please capture your Face ID before submitting.")
-      setIsLoading(false)
-      return
-    }
+    // Remove the check for isCaptured
+    // if (!isCaptured) {
+    //   setError("Please capture your Face ID before submitting.")
+    //   setIsLoading(false)
+    //   return
+    // }
 
     if (!selectedState || !selectedDistrict) {
       setError("Please select both a state and a district.")
@@ -232,7 +232,7 @@ export default function RegisterPage() {
         state: selectedState,
         district: selectedDistrict,
         role: formData.get("role") as string,
-        faceIdCaptured: isCaptured,
+        // Remove faceIdCaptured
         createdAt: serverTimestamp(),
       }
 
@@ -257,33 +257,36 @@ export default function RegisterPage() {
     }
   }
 
-  const startCamera = useCallback(async () => {
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({ video: true })
-      if (videoRef.current) {
-        videoRef.current.srcObject = stream
-      }
-    } catch (err) {
-      console.error("Error accessing camera:", err)
-      alert("Unable to access camera. Please ensure camera permissions are granted.")
-    }
-  }, [])
+  // Remove startCamera function
+  // const startCamera = useCallback(async () => {
+  //   try {
+  //     const stream = await navigator.mediaDevices.getUserMedia({ video: true })
+  //     if (videoRef.current) {
+  //       videoRef.current.srcObject = stream
+  //     }
+  //   } catch (err) {
+  //     console.error("Error accessing camera:", err)
+  //     alert("Unable to access camera. Please ensure camera permissions are granted.")
+  //   }
+  // }, [])
 
-  const stopCamera = useCallback(() => {
-    const stream = videoRef.current?.srcObject as MediaStream
-    stream?.getTracks().forEach(track => track.stop())
-    if (videoRef.current) {
-      videoRef.current.srcObject = null
-    }
-  }, [])
+  // Remove stopCamera function
+  // const stopCamera = useCallback(() => {
+  //   const stream = videoRef.current?.srcObject as MediaStream
+  //   stream?.getTracks().forEach(track => track.stop())
+  //   if (videoRef.current) {
+  //     videoRef.current.srcObject = null
+  //   }
+  // }, [])
 
-  useEffect(() => {
-    if (showCamera) {
-      startCamera()
-    } else {
-      stopCamera()
-    }
-  }, [showCamera, startCamera, stopCamera])
+  // Remove useEffect hook
+  // useEffect(() => {
+  //   if (showCamera) {
+  //     startCamera()
+  //   } else {
+  //     stopCamera()
+  //   }
+  // }, [showCamera, startCamera, stopCamera])
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-muted p-4">
@@ -355,7 +358,8 @@ export default function RegisterPage() {
                 </SelectContent>
               </Select>
             </div>
-            <div className="grid gap-2">
+            {/* Remove the entire Face ID Capture div */}
+            {/* <div className="grid gap-2">
               <Label>Face ID Capture</Label>
               <Button
                 type="button"
@@ -390,7 +394,7 @@ export default function RegisterPage() {
               {isCaptured && !showCamera && (
                 <p className="text-green-500 text-sm">Face ID captured successfully.</p>
               )}
-            </div>
+            </div> */}
           </CardContent>
           <CardFooter>
             <Button type="submit" className="w-full" disabled={isLoading}>
