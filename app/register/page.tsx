@@ -1,8 +1,9 @@
 "use client"
 
-import { useState } from "react" // Remove useRef, useCallback, useEffect
+// Ensure useRef, useCallback, useEffect are removed from imports
+import { useState } from "react"
 import { useRouter } from "next/navigation"
-// Remove Camera import
+// Ensure Camera import is removed
 import { db } from "@/app/firebase/config"
 import { collection, addDoc, serverTimestamp } from "firebase/firestore"
 
