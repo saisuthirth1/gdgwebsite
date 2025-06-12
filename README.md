@@ -1,4 +1,4 @@
-# BharatVerify: Blockchain-Powered Voting Verification System
+![image](https://github.com/user-attachments/assets/35ea38bb-9b5b-4ee4-bf44-c4099ce8155d)# BharatVerify: Blockchain-Powered Voting Verification System
 
 <div align="center">
   <img src="/imgs/ELECTION_COMMISSION_OF_INDIA.jpg" alt="Election Commission of India" width="400px">
@@ -15,7 +15,7 @@ BharatVerify is a cutting-edge digital voting verification platform that combine
 
 ### System Architecture and Integration Flow
 <div align="center">
-  <img src="/BharatVerify flowchart.jpg" alt="Integration Flowchart" width="700px">
+  <img src="/flowchart new.png" alt="Integration Flowchart" width="700px">
   <p><em>The system architecture shows how voter data flows securely through verification, blockchain storage, and monitoring.</em></p>
 </div>
 
@@ -147,6 +147,11 @@ BharatVerify implements multiple layers of security:
 - **Expanded Language Support**: Additional regional languages for voice verification
 - **Remote Voting Capabilities**: Secure options for citizens unable to reach polling stations
 - **Integration with National Election Database**: Seamless data sharing with central election systems
+
+## 🚀 Prototype Performance and Benchmarking Report
+<div align="center">
+  <img src="/benchmark report.png" alt="report" width="700px">
+</div>
 
 ## 🏆 Hackathon Project
 
