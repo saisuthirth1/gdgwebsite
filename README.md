@@ -15,7 +15,7 @@ BharatVerify is a cutting-edge digital voting verification platform that combine
 
 ### System Architecture and Integration Flow
 <div align="center">
-  <img src="/Integration Flowchart (1).png" alt="Integration Flowchart" width="700px">
+  <img src="/BharatVerify flowchart.jpg" alt="Integration Flowchart" width="700px">
   <p><em>The system architecture shows how voter data flows securely through verification, blockchain storage, and monitoring.</em></p>
 </div>
 
