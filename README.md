@@ -57,8 +57,19 @@ BharatVerify is a cutting-edge digital voting verification platform that combine
 <div align="center">
   <img src="/imgs/loginpage2.jpg" alt="Dashboard" width="700px">
 </div>
-
 The dashboard provides election officials with real-time insights into voting patterns, verification statistics, and potential fraud alerts. The intuitive interface enables quick response to issues and efficient management of voting operations.
+
+### Voter List
+<div align="center">
+  <img src="/voterlist.png" alt="voterlist" width="700px">
+</div>
+The Voter List visually highlights verification status — green rows for approved voters and red for those needing manual checks. It displays voter details like ID, booth, Aadhaar (last 4 digits), and verification time for easy officer review.
+
+### SOS Button
+<div align="center">
+  <img src="/sos button.png" alt="sosbutton" width="700px">
+</div>
+The emergency alert popup allows officers to silently notify local police of critical incidents. It auto-shares the exact polling location using GPS for rapid response.
 
 ### Voter Verification Process
 <div align="center">
