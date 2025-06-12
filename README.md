@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/35ea38bb-9b5b-4ee4-bf44-c4099ce8155d)# BharatVerify: Blockchain-Powered Voting Verification System
+# BharatVerify: Blockchain-Powered Voting Verification System
 
 <div align="center">
   <img src="/imgs/ELECTION_COMMISSION_OF_INDIA.jpg" alt="Election Commission of India" width="400px">
