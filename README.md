@@ -7,6 +7,13 @@
 
 ## 🔍 Overview
 
+## Officer Login Credentials
+
+Use the following credentials to log in as an Officer:
+
+- **Email:** sai@gmail.com  
+- **Password:** 1234567
+  
 BharatVerify is a cutting-edge digital voting verification platform that combines blockchain technology with advanced biometric verification to create a secure, transparent, and accessible electoral system. Designed specifically for the Indian electoral process, BharatVerify addresses key challenges in traditional voting systems: fraud prevention, accessibility for diverse populations, and real-time monitoring of electoral activities.
 
 <div align="center">
